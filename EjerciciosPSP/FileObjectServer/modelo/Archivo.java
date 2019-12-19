@@ -3,6 +3,7 @@ package modelo;
 import java.io.File;
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class Archivo implements Serializable{
 	private String nombre,ruta;
 	private File archivo;
@@ -12,6 +13,12 @@ public class Archivo implements Serializable{
 		this.nombre = archivo.getName();
 		this.ruta = archivo.getAbsolutePath();
 		this.archivo = archivo;
+	}
+	
+	public Archivo() {
+		this.nombre = null;
+		this.ruta = null;
+		this.archivo = null;
 	}
 
 	
