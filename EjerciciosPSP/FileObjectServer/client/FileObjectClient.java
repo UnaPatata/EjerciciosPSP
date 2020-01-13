@@ -41,7 +41,7 @@ public class FileObjectClient {
 		ObjectOutputStream oos = new ObjectOutputStream(s.getOutputStream());
 		System.out.println("Dime la ruta del archivo: ");
 		Scanner teclado = new Scanner(System.in);
-		archivo.setRuta(teclado.next());
+		archivo.setRuta(teclado.nextLine());
 		oos.writeObject(archivo);
 	}
 
